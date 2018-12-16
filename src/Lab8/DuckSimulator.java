@@ -1,3 +1,5 @@
+package Lab8;
+
 public class DuckSimulator {
     public static void main(String[] args) {
         DuckSimulator simulator = new DuckSimulator();
@@ -35,12 +37,12 @@ public class DuckSimulator {
 
         flock2.add(flock1);
 
-        System.out.println("**Flock 1**");
+        System.out.println("**Lab8.Flock 1**");
         simulate(flock1);
         System.out.println("The ducks quacked " + QuackCounter.getNumberQuacks() + " times.");
         System.out.println();
 
-        System.out.println("**Flock 2**");
+        System.out.println("**Lab8.Flock 2**");
         simulate(flock2);
         System.out.println("The ducks quacked " + QuackCounter.getNumberQuacks()+ " times.");
         System.out.println();
