@@ -29,6 +29,14 @@ public class SingleTour implements Tour {
         this.reservedSeats = reservedSeats;
     }
 
+    public int getAllSeats() {
+        return allSeats;
+    }
+
+    public int getReservedSeats() {
+        return reservedSeats;
+    }
+
     @Override
     public String getName() {
         return name;

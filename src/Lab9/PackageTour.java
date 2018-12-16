@@ -34,4 +34,14 @@ public class PackageTour implements Tour {
             } }
         return this.totalSeat;
     }
+    public void newTour(Tour tour){
+        this.tours.add(tour);
+        this.totalSeat = this.tours.get(0).getAvailableSeats();
+    }
+    public int allTour(){
+        return tours.size();
+    }
+    public void cancelTour(Tour tour){
+        this.tours.remove(tour);
+    }
 }
